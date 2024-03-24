@@ -568,7 +568,7 @@ namespace MEMZClean {
                     IntPtr hdc = GetDC(IntPtr.Zero);
             
                     StretchBlt(hdc, 50, 50, cx - 100, cy - 100, hdc, 0, 0, cx, cy, TernaryRasterOperations.SRCCOPY);
-                    Thread.Sleep(800);
+                    Thread.Sleep(200);
                 }
             } 
             private void randomposicon() {
@@ -622,7 +622,7 @@ namespace MEMZClean {
                     int x = r.Next(gx1);
                     int y = r.Next(gy1);
                     StretchBlt(hdc, x, y, x, y, hdc, 0, 0, gx1, gy1, TernaryRasterOperations.SRCCOPY);
-                    Thread.Sleep(5000);
+                    Thread.Sleep(1000);
                 }
             }
 
