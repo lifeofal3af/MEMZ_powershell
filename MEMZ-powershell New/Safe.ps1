@@ -654,6 +654,8 @@ namespace MEMZClean {
                 tun.Start();
                 Thread.Sleep(7000);
                 dup.Start();
+                while (true) {
+                   }
                 }
             }
     }
