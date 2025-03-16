@@ -587,7 +587,7 @@ namespace MEMZClean {
             private void notepad() {
                 using (StreamWriter w = new StreamWriter("note.txt"))
                 {
-                    w.WriteLine("YOUR COMPUTER HAS BEEN FUCKED BY THE MEMZ TROJAN.\nYour computer won't boot up again, so use it as long as you can!\n:D\nTrying to kill MEMZ will cause your system to be destroyed instantly, so don't try it :D");
+                    w.WriteLine("hehe i put virus on your pooper");
                 }
 
                 Process.Start("notepad", "note.txt");
@@ -640,9 +640,9 @@ namespace MEMZClean {
 
                 note.Start();
                 Thread.Sleep(30000);
-                ope.Start();
+                
                 Thread.Sleep(30000);
-                cur.Start();
+                
                 Thread.Sleep(10000);
                 sou.Start();
                 Thread.Sleep(35000);
